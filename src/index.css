@@ -142,7 +142,10 @@ button {
 /* =========================
    TYPOGRAPHY
 ========================= */
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   line-height: 1.2;
 }
 
@@ -162,4 +165,14 @@ p {
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+/* GLOBAL BACKGROUND */
+body {
+  background-image: url("/images/Family.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* nice parallax feel */
+  color: white;
 }
