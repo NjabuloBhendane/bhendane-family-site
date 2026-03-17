@@ -24,7 +24,10 @@ body {
 }
 
 .section {
-  padding: 2rem;
+  width: 100%;
+  padding: 80px 8%;
+  max-width: 1600px;
+  margin: auto;
 }
 
 .image-grid {
