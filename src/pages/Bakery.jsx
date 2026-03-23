@@ -14,7 +14,7 @@ function Bakery() {
       </p>
 
       <div className="image-grid">
-        <img src="/images/cake1.jpg" alt="Cake 1" />
+        <img src="/BeeBakery.jepg" alt="Cake 1" />
         <img src="/images/cake2.jpg" alt="Cake 2" />
       </div>
     </div>
