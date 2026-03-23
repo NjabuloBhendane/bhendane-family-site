@@ -157,14 +157,42 @@ p {
    HERO SECTION BASE
 ========================= */
 .hero {
+  position: relative;
   width: 100%;
-  min-height: 70vh;
+  min-height: 100vh; /* full screen hero */
   padding: 80px 5%;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   text-align: center;
+  color: white;
+
+  z-index: 1;
+}
+
+/* 🔥 Overlay for readability */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5); /* adjust darkness */
+  z-index: -1;
+}
+
+.hero h2 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: clamp(1rem, 2.5vw, 1.4rem);
+  max-width: 700px;
+  line-height: 1.6;
+  opacity: 0.9;
 }
 
 /* GLOBAL BACKGROUND */
@@ -186,4 +214,30 @@ body::before {
   height: 100%;
   background: rgba(0, 0, 0, 0.6); /* adjust darkness */
   z-index: -1;
+}
+
+.background-slider {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+
+  background-size: cover;
+  background-position: center;
+  transition: background-image 1s ease-in-out;
+}
+
+/* Dark overlay for readability */
+.background-slider::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.home-page body {
+  background: none;
 }
