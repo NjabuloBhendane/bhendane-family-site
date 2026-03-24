@@ -6,6 +6,7 @@ const images = [
   "/images/slide2.jpg",
   "/images/slide3.jpeg",
   "/images/Slide4.jpeg",
+  "/images/slide5.jpeg",
   
 ];
 
