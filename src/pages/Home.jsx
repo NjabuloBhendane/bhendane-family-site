@@ -1,19 +1,39 @@
 import Carousel from "../components/Carousel";
+import { useState, useEffect } from "react";
+
+const images = [
+  "/images/slide1.jpeg",
+  "/images/slide2.jpg",
+  "/images/slide3.jpeg",
+  "/images/Slide4.jpeg",
+  
+];
 
 function Home() {
-  return (
-    <div className="home">
-      <section className="hero">
-        <h2>Welcome to the Bhendane Family Businesses</h2>
-        <p>
-          We proudly operate:
-          13th Sage private dining,
-          B's Bakery custom cakes,
-          and Comfy Food catering services.
-        </p>
-      </section>
+  const [index, setIndex] = useState(0);
 
-      <Carousel />
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prev) => (prev + 1) % images.length);
+    }, 4000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <div>
+    <section
+      className="hero"
+      style={{
+        backgroundImage: `url(${images[index]})`
+      }}
+    >
+      <div className="hero-content">
+        <h2>Welcome to the Bhendane Family</h2>
+        <p>Three businesses. One family passion.</p>
+      </div>
+    </section>
+    <Carousel/>
     </div>
   );
 }
