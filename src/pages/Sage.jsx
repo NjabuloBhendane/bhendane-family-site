@@ -7,9 +7,9 @@ function Sage() {
       </p>
 
       <div className="image-grid">
-        <img src="/images/sage1.jpg" alt="Dining 1" />
-        <img src="/images/sage2.jpg" alt="Dining 2" />
-        <img src="/images/sage3.jpg" alt="Dining 3" />
+        <img src="/images/sage1.jpeg" alt="Dining 1" />
+        <img src="/images/sage2.jpeg" alt="Dining 2" />
+        <img src="/images/sage3.jpeg" alt="Dining 3" />
       </div>
     </div>
   );
