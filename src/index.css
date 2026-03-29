@@ -224,3 +224,28 @@ body::before {
 .home-page body {
   background: none;
 }
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  background: #25d366;
+  color: white;
+
+  padding: 12px 18px;
+  border-radius: 30px;
+
+  font-weight: bold;
+  text-decoration: none;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+
+  z-index: 1000;
+
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-button:hover {
+  transform: scale(1.1);
+}

@@ -1,12 +1,24 @@
 function Bakery() {
   return (
     <div className="section">
-      <h2>B's Bakery</h2>
+         <a
+  href="https://wa.me/27731538557"
+  className="whatsapp-button"
+  target="_blank"
+>
+  Order on WhatsApp
+</a>
+      <h2>Bee's Bakery</h2>
 
       <ul className="cake-list">
-        <li>Vanilla Cake (6 inch) - R350</li>
-        <li>Chocolate Cake (8 inch) - R450</li>
-        <li>Red Velvet (10 inch) - R650</li>
+        <li>Lamingtons (Beer Box) - R380</li>
+        <li>Scones (Dozen) - R80</li>
+        <li>   (Beer Box) - R300</li>
+         <li>Carrot cake(Beer Box) - R360</li>
+          <li>Biscuits (2 Litre) - R180</li>
+          <li>  (5 Litre) - R350</li>
+          <li>Muffins (24 muffins) - R160</li>
+          <li>    (Beer Box) - R350</li>
       </ul>
 
       <p className="notice">
