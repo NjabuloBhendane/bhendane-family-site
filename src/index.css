@@ -309,3 +309,139 @@ body::before {
   max-width: 900px;
     text-align: left;
 }
+
+/* =========================
+   BAKERY SECTION
+========================= */
+.bakery-section {
+  width: 100%;
+  padding: 100px 8%;
+}
+
+/* Header area */
+.bakery-header {
+  max-width: 1000px;
+  margin-bottom: 50px;
+}
+
+/* Heading */
+.bakery-header h2 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+
+  font-family: "Georgia", serif;
+
+  font-weight: 600;
+
+  color: #ffffff;
+
+  margin-bottom: 25px;
+
+  position: relative;
+}
+
+/* Elegant underline */
+.bakery-header h2::after {
+  content: "";
+
+  width: 80px;
+  height: 3px;
+
+  background: #d8b16a;
+
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+}
+
+/* Description */
+.bakery-description {
+  font-size: clamp(1rem, 1.2vw, 1.15rem);
+
+  line-height: 2;
+
+  color: rgba(255,255,255,0.9);
+
+  font-family: "Helvetica Neue", sans-serif;
+
+  font-weight: 300;
+
+  max-width: 850px;
+}
+
+/* =========================
+   MENU STYLING
+========================= */
+.cake-menu {
+  margin-bottom: 40px;
+
+  max-width: 800px;
+
+  backdrop-filter: blur(5px);
+}
+
+/* Each item row */
+.cake-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 18px 0;
+
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+
+  font-size: 1.05rem;
+
+  color: white;
+
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+/* Price styling */
+.cake-item span:last-child {
+  color: #d8b16a;
+
+  font-weight: 600;
+}
+
+/* =========================
+   NOTICE
+========================= */
+.notice {
+  margin-bottom: 40px;
+
+  font-size: 0.95rem;
+
+  color: rgba(255,255,255,0.75);
+
+  font-style: italic;
+}
+
+/* =========================
+   WHATSAPP BUTTON
+========================= */
+.whatsapp-button {
+  display: inline-block;
+
+  margin-bottom: 35px;
+
+  padding: 14px 24px;
+
+  background: #25d366;
+
+  color: white;
+
+  border-radius: 40px;
+
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition: all 0.3s ease;
+}
+
+/* Hover */
+.whatsapp-button:hover {
+  transform: translateY(-3px);
+
+  background: #1ebe5d;
+}
