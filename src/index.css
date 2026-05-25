@@ -249,3 +249,63 @@ body::before {
 .whatsapp-button:hover {
   transform: scale(1.1);
 }
+
+/* =========================
+   SAGE SECTION
+========================= */
+.sage-section {
+  width: 100%;
+  padding: 100px 8%;
+}
+
+/* Content area */
+.sage-content {
+  max-width: 1000px;
+  margin-bottom: 50px;
+}
+
+/* Heading */
+.sage-content h2 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+
+  font-family: "Georgia", serif;
+
+  font-weight: 600;
+  letter-spacing: 1px;
+
+  margin-bottom: 30px;
+
+  color: #ffffff;
+
+  position: relative;
+}
+
+/* Optional elegant underline */
+.sage-content h2::after {
+  content: "";
+
+  width: 80px;
+  height: 3px;
+
+  background: #c8a96b;
+
+  position: absolute;
+  left: 0;
+  bottom: -12px;
+}
+
+/* Paragraph */
+.sage-content p {
+  font-size: clamp(1rem, 1.3vw, 1.2rem);
+
+  line-height: 2;
+
+  color: rgba(255, 255, 255, 0.9);
+
+  font-family: "Helvetica Neue", sans-serif;
+
+  font-weight: 300;
+
+  max-width: 900px;
+    text-align: left;
+}
